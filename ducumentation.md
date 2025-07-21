@@ -32,3 +32,4 @@ python main.py tests/test_files/Налоговый_кодекс.txt налоги
 ```bash
 count_pairs Налоговый_кодекс.txt налоги доходы 100
 ```
+
