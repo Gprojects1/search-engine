@@ -15,16 +15,20 @@
 ```bash
 sudo apt update
 sudo apt install -y g++ cmake python3 python3-pip
+```
 Для Windows (через WSL):
-CopyRun
+```bash
 wsl --install
 sudo apt update && sudo apt install -y g++ cmake python3 python3-pip
+```
 2. Сборка C++ приложения
-CopyRun
+```bash
 cd cpp_app
 mkdir build && cd build
 cmake ..
 make
+```
 3. Установка Python-зависимостей (для тестов)
-CopyRun
+```bash
 pip install -r ../requirements.txt
+```
