@@ -5,7 +5,7 @@
 
 ## Синтаксис
 ```bash
-python main.py <файл> <слово1> <слово2> <макс_расстояние>
+python python_app/main.py <файл> <слово1> <слово2> <макс_расстояние>
 ```
 
 ## Параметры
@@ -21,15 +21,15 @@ python main.py <файл> <слово1> <слово2> <макс_расстоян
 
 ### Пример 1: Поиск пар "налог" и "доход"
 ```bash
-python main.py tests/test_files/Налоговый_кодекс.txt налоги доходы 2
+python python_app/main.py python_app/tests/test_files/Налоговый_кодекс.txt налоги доходы 2
 ```
 ### Пример 2: Поиск соседних слов
 ```bash
-python main.py tests/test_files/Налоговый_кодекс.txt налоги на 0
+python python_app/main.py python_app/tests/test_files/Налоговый_кодекс.txt налоги на 0
 ```
 
 ### Пример 3: Широкий поиск
 ```bash
-count_pairs Налоговый_кодекс.txt налоги доходы 100
+python python_app/main.py python_app/tests/test_files/Налоговый_кодекс.txt налоги доходы 100
 ```
 
