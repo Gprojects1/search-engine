@@ -28,7 +28,17 @@ mkdir build && cd build
 cmake ..
 make
 ```
-3. Установка Python-зависимостей (для тестов)
+3. Установка Python-зависимостей (Необходима активация виртуальной среды)
 ```bash
-pip install -r ../requirements.txt
+pip install -r requirements.txt
+```
+4.  Запуск приложения 
+```bash
+cd python_app
+python main.py <файл> <слово1> <слово2> <макс_расстояние> 
+```
+5. Запуск тестов
+```bash 
+cd python_app/tests
+behave
 ```
