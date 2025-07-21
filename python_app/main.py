@@ -4,14 +4,12 @@ import shutil
 import sys
 
 def count_pairs(file_path, word1, word2, max_distance):
-    # Получаем абсолютный путь к файлу
     abs_file_path = os.path.abspath(file_path)
-    print(f"Поиск файла: {abs_file_path}")  # Отладочный вывод
+    print(f"Поиск файла: {abs_file_path}") 
     
     if not os.path.exists(abs_file_path):
         raise FileNotFoundError(f"Файл не найден: {abs_file_path}")
 
-    # Путь к C++ бинарнику
     cpp_app = os.path.join(
         os.path.dirname(__file__), 
         "..", 
@@ -24,7 +22,6 @@ def count_pairs(file_path, word1, word2, max_distance):
         raise FileNotFoundError(f"C++ программа не найдена: {cpp_app}")
 
     try:
-        # Запускаем процесс с абсолютными путями
         result = subprocess.run(
             [cpp_app, abs_file_path, word1, word2, str(max_distance)],
             capture_output=True,
